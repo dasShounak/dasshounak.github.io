@@ -9,6 +9,7 @@
         <title>Shounak Das | Front-end Developer, Logo Designer</title>
     </head>
     <body class="bg-black mx-16 my-4">
+        <!-- * NAVIGATION -->
         <nav
             class="
                 flex
@@ -25,8 +26,13 @@
                 from-black
             "
         >
-            <img src="img/logo-white.svg" alt="Shounak Das" title="Shounak Das" class="h-10 w-auto" />
-            <div id="greetings" class="text-white text-3xl font-display -ml-80">Good Afternoon</div>
+            <!-- * LOGO -->
+            <img src="img/logo-white.svg" alt="Shounak Das" title="Shounak Das" class="h-10 w-auto mr-4" />
+            <!-- * GREETINGS -->
+            <div class="text-white text-3xl font-display text-opacity-80 mr-auto">
+                Good <span id="greetings">Afternoon</span>
+            </div>
+            <!-- * LINKS -->
             <ul class="list-none text-black font-display text-3xl space-x-6 flex">
                 <li><a href="">about</a></li>
                 <li><a href="">work</a></li>
@@ -34,17 +40,30 @@
             </ul>
         </nav>
 
+        <!-- * ABOUT -->
         <section id="about" class="h-screen">
-            <h1 class="font-display text-8xl text-white pt-32">Hello. <br />I'm Shounak.</h1>
-            <h2 class="font-display text-6xl text-black text-outline">
+            <h1 class="font-display text-8xl text-white pt-40">Hello. <br />I'm Shounak.</h1>
+            <h2 class="font-display text-7xl text-black text-outline">
                 Front-end Developer<br />
                 Logo Designer
             </h2>
-            <p class="text-xl leading-tight text-white text-opacity-80 max-w-lg mt-16 ml-[512px]">
-                I am a front-end developer and logo designer based in India, studying Computer Science Engineering. Over
-                the past few years, I have been working on my skills in web design and development. My designs are
-                greatly influenced by minimalism and I always give more weight on accessibility rather than the looks.
+            <p class="text-xl leading-tight text-white text-opacity-80 max-w-lg mt-32 ml-[512px]">
+                I am a front-end developer, logo designer, and blogger based in India, studying Computer Science
+                Engineering. Over the past few years, I have been working on my skills in web design and development. My
+                designs are greatly influenced by minimalism and I always give more weight on accessibility rather than
+                the looks.
             </p>
         </section>
+
+        <!-- * WORK -->
+        <section id="work" class="max-w-5xl mx-auto mt-48">
+            <h1 class="font-display text-8xl text-white pt-40">selected-works</h1>
+        </section>
+
+        <!-- * CONTACT -->
+        <section id="contact" class="max-w-5xl mx-auto mt-48">
+            <h1 class="font-display text-8xl text-white pt-40">contact</h1>
+        </section>
+        <script src="script.js"></script>
     </body>
 </html>

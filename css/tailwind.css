@@ -44,4 +44,8 @@
         color: #fff;
         -webkit-text-stroke: 0px white;
     }
+
+    #contact h1 > span {
+        animation-delay: 0.35s;
+    }
 }
