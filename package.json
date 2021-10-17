@@ -1,0 +1,20 @@
+{
+  "name": "shounak",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "set NODE_ENV=development && postcss css/tailwind.css -o css/build.css -w",
+    "minify": "set NODE_ENV=production && postcss -r css/build.css -u cssnano"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "cssnano": "^5.0.8",
+    "postcss": "^8.3.9",
+    "postcss-cli": "^9.0.1",
+    "tailwindcss": "^2.2.17"
+  }
+}

@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Monument Extended;
+        font-weight: 400;
+        src: url(/fonts/monumentextended-regular-webfont.woff), url(/fonts/monumentextended-regular-webfont.woff2);
+    }
+
+    @font-face {
+        font-family: Titillium Web;
+        font-weight: 700;
+        src: url(/fonts/titilliumweb-bold-webfont.woff), url(/fonts/titilliumweb-bold-webfont.woff2);
+    }
+
+    @font-face {
+        font-family: Titillium Web;
+        font-weight: 600;
+        src: url(/fonts/titilliumweb-semibold-webfont.woff), url(/fonts/titilliumweb-semibold-webfont.woff2);
+    }
+
+    @font-face {
+        font-family: Titillium Web;
+        font-weight: 400;
+        src: url(/fonts/titilliumweb-regular-webfont.woff), url(/fonts/titilliumweb-regular-webfont.woff2);
+    }
+
+    ::selection {
+        background: #fff;
+        color: #000;
+    }
+
+    .text-outline {
+        -webkit-text-stroke: 1px white;
+    }
+
+    nav li {
+        @apply text-outline;
+    }
+
+    nav li:hover {
+        color: #fff;
+        -webkit-text-stroke: 0px white;
+    }
+}
