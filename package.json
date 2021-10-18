@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@tailwindcss/forms": "^0.3.4",
     "autoprefixer": "^10.3.7",
     "cssnano": "^5.0.8",
     "postcss": "^8.3.9",

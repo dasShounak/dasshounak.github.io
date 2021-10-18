@@ -10,10 +10,14 @@ module.exports = {
             sans: ["Titillium Web", "sans-serif"],
             display: ["Monument Extended", "sans-serif"],
         },
-        extend: {},
+        extend: {
+            colors: {
+                transparent: "transparent",
+            },
+        },
     },
     variants: {
         extend: {},
     },
-    plugins: [],
+    plugins: [require("@tailwindcss/forms")],
 };
