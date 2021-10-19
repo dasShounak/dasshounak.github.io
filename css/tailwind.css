@@ -45,6 +45,30 @@
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: white;
     }
+
+    .hover-underline {
+        position: relative;
+        display: inline-block;
+        color: #000;
+    }
+
+    .hover-underline:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #000;
+        transform: scaleX(0);
+        height: 1px;
+        width: 100%;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-in-out;
+    }
+
+    .hover-underline:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
 }
 
 
