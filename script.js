@@ -19,3 +19,5 @@ const greet = () => {
 };
 
 greet();
+
+alert("This website is currently under development. Come back in a week 👍")
