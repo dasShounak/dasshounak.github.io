@@ -9,33 +9,15 @@
         <title>Shounak Das | Front-end Developer, Logo Designer</title>
     </head>
     <body class="bg-black">
-        <div id="container" class="px-16 py-4">
+        <div id="container" class="px-4 md:px-8 lg:px-16 py-4">
             <!-- * NAVIGATION -->
-            <nav
-                class="
-                    flex
-                    justify-between
-                    items-center
-                    fixed
-                    top-0
-                    right-0
-                    w-full
-                    px-16
-                    py-4
-                    pb-20
-                    bg-gradient-to-b
-                    from-black
-                    z-40
-                "
-            >
+            <nav class="flex justify-between items-center fixed top-0 right-0 w-full p-4 lg:px-16 lg:py-4 pb-20 bg-gradient-to-b from-black z-40">
                 <!-- * LOGO -->
-                <img src="img/logo-white.svg" alt="Shounak Das" title="Shounak Das" class="h-10 w-auto mr-8" />
+                <img src="img/logo-white.svg" alt="Shounak Das" title="Shounak Das" class="h-8 md:h-10 w-auto mr-8" />
                 <!-- * GREETINGS -->
-                <div class="text-white text-3xl font-display text-opacity-80 mr-auto">
-                    Good <span id="greetings">Afternoon</span>
-                </div>
+                <div class="text-white text-2xl md:text-3xl font-display text-opacity-80 mr-auto">Good <span id="greetings">Afternoon</span></div>
                 <!-- * LINKS -->
-                <ul class="list-none font-display text-3xl space-x-6 flex">
+                <ul class="hidden list-none font-display text-2xl lg:text-3xl space-x-6 md:flex">
                     <li><a href="#about" class="text-outline-1 hover:text-white hover:text-outline-0">about</a></li>
                     <li><a href="#work" class="text-outline-1 hover:text-white hover:text-outline-0">work</a></li>
                     <li><a href="#contact" class="text-outline-1 hover:text-white hover:text-outline-0">contact</a></li>
@@ -43,35 +25,26 @@
             </nav>
 
             <!-- * ABOUT -->
-            <section id="about" class="h-screen">
-                <h1 class="font-display text-8xl text-white pt-40">Hello. <br />I'm Shounak.</h1>
-                <h2 class="font-display text-7xl text-black text-outline-1">
+            <section id="about" class="md:h-screen">
+                <h1 class="font-display text-4xl sm:text-6xl lg:text-8xl text-white pt-40">Hello. <br />I'm Shounak.</h1>
+                <h2 class="font-display text-3xl sm:text-5xl lg:text-7xl text-black text-outline-1">
                     Front-end Developer<br />
                     Logo Designer
                 </h2>
-                <p class="text-xl leading-tight text-white text-opacity-80 max-w-lg mt-32 ml-[512px]">
-                    I am a front-end developer, logo designer, and blogger based in India, studying Computer Science
-                    Engineering. Over the past few years, I have been working on my skills in web design and
-                    development. My designs are greatly influenced by minimalism and I always give more weight on
-                    accessibility rather than the looks.
-                </p>
+                <p class="sm:text-lg md:text-xl leading-tight text-white text-opacity-80 max-w-lg mt-10 md:mt-32 md:ml-[400px] lg:ml-[512px]">I am a front-end developer, logo designer, and blogger based in India, studying Computer Science Engineering. Over the past few years, I have been working on my skills in web design and development. My designs are greatly influenced by minimalism and I always give more weight on accessibility rather than the looks.</p>
             </section>
 
             <!-- * WORK -->
             <section id="work" class="max-w-5xl mx-auto mt-48">
-                <h1 class="font-display text-8xl text-white pt-40">selected works</h1>
+                <h1 class="font-display text-4xl sm:text-6xl lg:text-8xl text-white pt-40">selected works</h1>
             </section>
 
             <!-- * CONTACT -->
             <section id="contact" class="max-w-5xl mx-auto mt-48">
-                <h1 class="font-display text-8xl text-white pt-40 mb-40">contact</h1>
+                <h1 class="font-display text-4xl sm:text-6xl lg:text-8xl text-white pt-40 mb-40">contact</h1>
 
                 <!-- * FORM -->
-                <form
-                    action="https://api.web3forms.com/submit"
-                    method="POST"
-                    class="text-white max-w-2xl space-y-6 text-2xl mx-auto"
-                >
+                <form action="https://api.web3forms.com/submit" method="POST" class="text-white max-w-2xl space-y-6 text-lg md:text-xl lg:text-2xl mx-auto">
                     <!-- REQUIRED: Your Access key here. Don't worry this can be public -->
                     <input type="hidden" name="apikey" value="b9fab9e8-f063-4f12-a254-23f5e561be4b" />
 
@@ -91,108 +64,35 @@
                     <!-- Custom Form Data: Form data you wish to receive in email. -->
                     <div id="grp-name">
                         <label for="name">Full Name</label><br />
-                        <input
-                            type="text"
-                            name="Full Name"
-                            id="name"
-                            required
-                            class="
-                                mt-2
-                                w-full
-                                bg-transparent
-                                border-white border-opacity-60
-                                text-white text-opacity-80
-                                focus:border
-                                focus:border-white
-                                focus:transform focus:scale-105
-                                transition
-                                focus:ring-0
-                            "
-                            placeholder="eg. John Doe"
-                        /><br />
+                        <input type="text" name="Full Name" id="name" required class="mt-2 w-full bg-transparent border-white border-opacity-60 text-white text-opacity-80 focus:border focus:border-white focus:transform focus:scale-105 transition focus:ring-0" placeholder="eg. John Doe" /><br />
                     </div>
 
                     <div id="grp-email">
                         <label for="email">Email</label><br />
-                        <input
-                            type="email"
-                            name="Email"
-                            id="email"
-                            required
-                            class="
-                                mt-2
-                                w-full
-                                bg-transparent
-                                border-white border-opacity-60
-                                text-white text-opacity-80
-                                focus:border
-                                focus:border-white
-                                focus:transform focus:scale-105
-                                transition
-                                focus:ring-0
-                            "
-                            placeholder="eg. you@company.com"
-                        /><br />
+                        <input type="email" name="Email" id="email" required class="mt-2 w-full bg-transparent border-white border-opacity-60 text-white text-opacity-80 focus:border focus:border-white focus:transform focus:scale-105 transition focus:ring-0" placeholder="eg. you@company.com" /><br />
                     </div>
 
                     <div id="grp-message">
                         <label for="message">Message</label><br />
-                        <textarea
-                            name="message"
-                            id="message"
-                            required
-                            class="
-                                mt-2
-                                w-full
-                                bg-transparent
-                                border-white border-opacity-60
-                                text-white text-opacity-80
-                                focus:border
-                                focus:border-white
-                                focus:transform focus:scale-105
-                                transition
-                                focus:ring-0
-                            "
-                            rows="6"
-                            placeholder="Your message..."
-                        ></textarea
-                        ><br />
+                        <textarea name="message" id="message" required class="mt-2 w-full bg-transparent border-white border-opacity-60 text-white text-opacity-80 focus:border focus:border-white focus:transform focus:scale-105 transition focus:ring-0" rows="6" placeholder="Your message..."></textarea><br />
                     </div>
 
                     <div id="grp-btn" class="flex justify-evenly items-center">
-                        <button
-                            type="submit"
-                            class="
-                                font-display
-                                text-4xl text-black text-outline-1
-                                hover:text-white hover:text-outline-0
-                            "
-                        >
-                            Send
-                        </button>
-                        <button
-                            type="reset"
-                            class="
-                                font-display
-                                text-4xl text-black text-outline-1
-                                hover:text-white hover:text-outline-0
-                            "
-                        >
-                            Reset
-                        </button>
+                        <button type="submit" class="font-display text-2xl md:text-3xl lg:text-4xl text-black text-outline-1 hover:text-white hover:text-outline-0">Send</button>
+                        <button type="reset" class="font-display text-2xl md:text-3xl lg:text-4xl text-black text-outline-1 hover:text-white hover:text-outline-0">Reset</button>
                     </div>
                 </form>
             </section>
         </div>
 
-        <footer class="bg-gray-300 p-8 text-xl mt-80">
-            <div id="links" class="flex justify-between text-center max-w-xl mx-auto">
+        <footer class="bg-white p-8 m-4 mt-80">
+            <div id="links" class="flex font-display text-xs sm:text-xl justify-between text-center max-w-xl mx-auto">
                 <a href="https://github.com/dasShounak/" target="_blank" rel="noopener noreferrer" class="hover-underline">GitHub</a>
                 <a href="https://www.linkedin.com/in/dasshounak/" target="_blank" rel="noopener noreferrer" class="hover-underline">Linkedin</a>
                 <a href="https://shounak.hashnode.dev/" target="_blank" rel="noopener noreferrer" class="hover-underline">Blog</a>
                 <a href="https://twitter.com/theShounakDas" target="_blank" rel="noopener noreferrer" class="hover-underline">Twitter</a>
             </div>
-            <p class="text-center mt-16 text-gray-600 text-xs">&copy;2021 Shounak Das</p>
+            <p class="text-center mt-16 text-black text-xs">&copy;2021 Shounak Das</p>
         </footer>
         <script src="script.js"></script>
     </body>
