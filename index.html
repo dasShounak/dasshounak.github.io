@@ -9,7 +9,7 @@
         <title>Shounak Das | Front-end Developer, Logo Designer</title>
     </head>
     <body class="bg-black">
-        <div id="container" class="px-4 md:px-8 lg:px-16 py-4">
+        <div id="container" class="px-4 md:px-8 lg:px-16 py-4 max-w-7xl mx-auto">
             <!-- * NAVIGATION -->
             <nav class="flex justify-between items-center fixed top-0 right-0 w-full p-4 lg:px-16 lg:py-4 pb-20 bg-gradient-to-b from-black z-40">
                 <!-- * LOGO -->
@@ -36,12 +36,35 @@
 
             <!-- * WORK -->
             <section id="work" class="max-w-5xl mx-auto mt-48">
-                <h1 class="font-display text-4xl sm:text-6xl lg:text-8xl text-white pt-40">selected works</h1>
+                <h1 class="font-display text-4xl sm:text-6xl lg:text-8xl text-white pt-40 xl:-ml-10">selected works</h1>
+                <div id="gallery" class="grid grid-cols-1 gap-40 mt-10 md:mt-32 max-w-4xl mx-auto">
+                    <div id="project" class="flex flex-col md:flex-row justify-between space-x-6">
+                        <div id="img" style="background-image: url(img/projects/xtreme.png)" class="h-[250px] w-[500px] bg-cover bg-top filter grayscale hover:grayscale-0 transition duration-500 transform hover:scale-105 cursor-pointer"></div>
+                        <div>
+                            <h3 class="text-white mb-2 font-display text-xl">Xtreme</h3>
+                            <p class="text-white max-w-sm text-opacity-80">Xtreme is Tailwind CSS based landing page template that specially crafted for Software, SaaS and Startup websites. It comes with all essential sections and elements you need to launch a SaaS website such as impressive hero area, about, features/services, pricing tables, blog grids, contact form, call to action and footer with widgets.</p>
+                        </div>
+                    </div>
+                    <div id="project" class="flex flex-col md:flex-row justify-between space-x-6">
+                        <div class="text-right">
+                            <h3 class="text-white mb-2 font-display text-xl">Spark</h3>
+                            <p class="text-white max-w-sm text-opacity-80">Spark is a beautifully designed Bootstrap 5 Landing Page Template for software, app, and SaaS websites. It's an app Landing Page Template that will make your website or web app stand out. This template is built with Bootstrap 5 and has dozens of essential pages. If you are looking for great looking app landing page that comes with all essential features and pages, the Spark will be the best choice for you.</p>
+                        </div>
+                        <div id="img" style="background-image: url(img/projects/spark.png)" class="h-[250px] w-[500px] bg-cover bg-top filter grayscale hover:grayscale-0 transition duration-500 transform hover:scale-105 cursor-pointer"></div>
+                    </div>
+                    <div id="project" class="flex flex-col md:flex-row justify-between space-x-6">
+                        <div id="img" style="background-image: url(img/projects/cryptoland.png)" class="h-[250px] w-[500px] bg-cover bg-top filter grayscale hover:grayscale-0 transition duration-500 transform hover:scale-105 cursor-pointer"></div>
+                        <div>
+                            <h3 class="text-white mb-2 font-display text-xl">CryptoLand</h3>
+                            <p class="text-white max-w-sm text-opacity-80">CryptoLand is an HTML Template that is Specially designed for - Cryptocurrency, Blockchain, ICO and Related Websites. This template comes with all major pages, sections and elements you need to create and launch a professional-looking crypto website in minutes!. The homepage features - impressive hero area, features, getting started steps, team, intro video, roadmap/timeline, testimonial, blog, FAQ and much more. This template is very carefully designed for ICO and crypto sites and covers almost all use cases.</p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- * CONTACT -->
             <section id="contact" class="max-w-5xl mx-auto mt-48">
-                <h1 class="font-display text-4xl sm:text-6xl lg:text-8xl text-white pt-40 mb-40">contact</h1>
+                <h1 class="font-display text-4xl sm:text-6xl lg:text-8xl text-white pt-40 mb-10 md:mb-32 xl:-ml-10">contact</h1>
 
                 <!-- * FORM -->
                 <form action="https://api.web3forms.com/submit" method="POST" class="text-white max-w-2xl space-y-6 text-lg md:text-xl lg:text-2xl mx-auto">
@@ -62,14 +85,16 @@
                     <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
 
                     <!-- Custom Form Data: Form data you wish to receive in email. -->
-                    <div id="grp-name">
-                        <label for="name">Full Name</label><br />
-                        <input type="text" name="Full Name" id="name" required class="mt-2 w-full bg-transparent border-white border-opacity-60 text-white text-opacity-80 focus:border focus:border-white focus:transform focus:scale-105 transition focus:ring-0" placeholder="eg. John Doe" /><br />
-                    </div>
+                    <div id="grp-name-email" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div id="grp-name" class="w-full">
+                            <label for="name">Full Name</label><br />
+                            <input type="text" name="Full Name" id="name" required class="mt-2 w-full bg-transparent border-white border-opacity-60 text-white text-opacity-80 focus:border focus:border-white focus:transform focus:scale-105 transition focus:ring-0" placeholder="eg. John Doe" /><br />
+                        </div>
 
-                    <div id="grp-email">
-                        <label for="email">Email</label><br />
-                        <input type="email" name="Email" id="email" required class="mt-2 w-full bg-transparent border-white border-opacity-60 text-white text-opacity-80 focus:border focus:border-white focus:transform focus:scale-105 transition focus:ring-0" placeholder="eg. you@company.com" /><br />
+                        <div id="grp-email" class="w-full">
+                            <label for="email">Email</label><br />
+                            <input type="email" name="Email" id="email" required class="mt-2 w-full bg-transparent border-white border-opacity-60 text-white text-opacity-80 focus:border focus:border-white focus:transform focus:scale-105 transition focus:ring-0" placeholder="eg. you@company.com" /><br />
+                        </div>
                     </div>
 
                     <div id="grp-message">
