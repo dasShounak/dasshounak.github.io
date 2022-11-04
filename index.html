@@ -20,6 +20,7 @@
                 <ul class="hidden list-none font-display text-2xl lg:text-3xl space-x-6 md:flex">
                     <li><a href="#about" class="text-outline-1 hover:text-white hover:text-outline-0">about</a></li>
                     <li><a href="#work" class="text-outline-1 hover:text-white hover:text-outline-0">work</a></li>
+                    <li><a href="#certs" class="text-outline-1 hover:text-white hover:text-outline-0">certs</a></li>
                     <li><a href="#contact" class="text-outline-1 hover:text-white hover:text-outline-0">contact</a></li>
                 </ul>
             </nav>
@@ -29,17 +30,20 @@
                 <h1 class="font-display text-4xl sm:text-6xl lg:text-8xl text-white pt-40">Hello. <br />I'm Shounak.</h1>
                 <h2 class="font-display text-3xl sm:text-5xl lg:text-7xl text-black text-outline-1">
                     Front-end Developer<br />
-                    Logo Designer
+                    Graphic Designer
                 </h2>
-                <p class="sm:text-lg md:text-xl leading-tight text-white text-opacity-80 max-w-lg mt-10 md:mt-32 md:ml-[400px] lg:ml-[512px]">I am a front-end developer, logo designer, and blogger based in India, studying Computer Science Engineering. Over the past few years, I have been working on my skills in web design and development. My designs are greatly influenced by minimalism and I always give more weight on accessibility rather than the looks.</p>
+                <div class="w-full flex flex-row items-center justify-center mt-20 xl:ml-32 lg:ml-24">
+                    <img src="img/arrow.png" class="hidden sm:block h-32 sm:h-40 w-32 sm:w-40" />
+                    <p class="sm:text-lg md:text-xl leading-tight text-white text-opacity-80 max-w-lg sm:ml-10 md:ml-20">I am a front-end developer and graphic designer from Kolkata, India, pursuing B. Tech in Computer Science and Engineering from SRMIST, Chennai. I have over 3 years experience in Web Development, and have worked as an intern at a startup in the summer of 2022. Currently, I am learning Ethcial Hacking with a vision to hack NASA using HTML someday ;)</p>
+                </div>
             </section>
 
             <!-- * WORK -->
             <section id="work" class="max-w-5xl mx-auto mt-48">
                 <h1 class="font-display text-4xl sm:text-6xl lg:text-8xl text-white pt-40 xl:-ml-10">selected works</h1>
-                <div id="gallery" class="grid grid-cols-1 gap-40 mt-10 md:mt-32 max-w-4xl mx-auto sm:mx-20 md:mx-auto">
+                <div id="work-gallery" class="grid grid-cols-1 gap-40 mt-10 md:mt-32 max-w-4xl mx-auto sm:mx-20 md:mx-auto">
                     <div id="project" class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <img src="img/projects/xtreme.png" alt="Xtreme" class="h-auto w-full filter grayscale hover:grayscale-0 transform hover:scale-105 transition duration-500 text-white" />
+                        <img src="img/projects/xtreme.png" alt="Xtreme" class="h-auto w-full filter grayscale hover:grayscale-0 transform transition duration-500 text-white" />
                         <div>
                             <h3 class="text-white mb-2 font-display text-xl">Xtreme</h3>
                             <p class="text-white max-w-md text-opacity-80">Xtreme is Tailwind CSS based landing page template that specially crafted for Software, SaaS and Startup websites. It comes with all essential sections and elements you need to launch a SaaS website such as impressive hero area, about, features/services, pricing tables, blog grids, contact form, call to action and footer with widgets.</p>
@@ -50,15 +54,40 @@
                             <h3 class="text-white mb-2 font-display text-xl">Spark</h3>
                             <p class="text-white md:ml-auto max-w-md text-opacity-80">Spark is a beautifully designed Bootstrap 5 Landing Page Template for software, app, and SaaS websites. It's an app Landing Page Template that will make your website or web app stand out. This template is built with Bootstrap 5 and has dozens of essential pages. If you are looking for great looking app landing page that comes with all essential features and pages, the Spark will be the best choice for you.</p>
                         </div>
-                        <img src="img/projects/spark.png" alt="Spark" class="h-auto w-full filter grayscale hover:grayscale-0 transform hover:scale-105 transition duration-500 text-white order-first md:order-last" />
+                        <img src="img/projects/spark.png" alt="Spark" class="h-auto w-full filter grayscale hover:grayscale-0 transform transition duration-500 text-white order-first md:order-last" />
                     </div>
                     <div id="project" class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <img src="img/projects/cryptoland.png" alt="CryptoLand" class="h-auto w-full filter grayscale hover:grayscale-0 transform hover:scale-105 transition duration-500 text-white" />
+                        <img src="img/projects/cryptoland.png" alt="CryptoLand" class="h-auto w-full filter grayscale hover:grayscale-0 transform transition duration-500 text-white" />
                         <div>
                             <h3 class="text-white mb-2 font-display text-xl">CryptoLand</h3>
                             <p class="text-white max-w-md text-opacity-80">CryptoLand is an HTML Template that is Specially designed for - Cryptocurrency, Blockchain, ICO and Related Websites. This template comes with all major pages, sections and elements you need to create and launch a professional-looking crypto website in minutes!. The homepage features - impressive hero area, features, getting started steps, team, intro video, roadmap/timeline, testimonial, blog, FAQ and much more. This template is very carefully designed for ICO and crypto sites and covers almost all use cases.</p>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- * CERTIFICATES -->
+            <section id="certs" class="max-w-5xl mx-auto mt-48">
+                <h1 class="font-display text-4xl sm:text-6xl lg:text-8xl text-white pt-40 mb-10 md:mb-32 xl:-ml-10">certs</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-4 md:gap-8">
+                    <a href="https://www.freecodecamp.org/certification/dasshounak/responsive-web-design" target="_blank" rel="noopener noreferrer">
+                        <img src="img/certs/1.png" alt="Responsive Web Design Certificate" class="h-auto w-[420px] md:w-full mx-auto filter grayscale hover:grayscale-0 transform hover:scale-105 transition duration-500" />
+                    </a>
+                    <a href="https://www.freecodecamp.org/certification/dasshounak/javascript-algorithms-and-data-structures" target="_blank" rel="noopener noreferrer">
+                        <img src="img/certs/2.png" alt="JavaScript Algorithms and Data Structures" class="h-auto w-[420px] md:w-full mx-auto filter grayscale hover:grayscale-0 transform hover:scale-105 transition duration-500" />
+                    </a>
+                    <a href="https://www.udemy.com/certificate/UC-2e81d4c5-9c34-42ad-8016-3ee816fedd14/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/certs/3.jpg" alt="Learn Ethical Hacking from Scratch" class="h-auto w-[420px] md:w-full mx-auto filter grayscale hover:grayscale-0 transform hover:scale-105 transition duration-500" />
+                    </a>
+                    <a href="">
+                        <img src="img/certs/4.png" alt="Software Development Program on Ethical Hacking" class="h-auto w-[420px] md:w-full mx-auto filter grayscale hover:grayscale-0 transform hover:scale-105 transition duration-500" />
+                    </a>
+                    <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-25RRTHRALQ.png" target="_blank" rel="noopener noreferrer">
+                        <img src="img/certs/5.png" alt="Advent Of Cyber 2021" class="h-auto w-[420px] md:w-full mx-auto filter grayscale hover:grayscale-0 transform hover:scale-105 transition duration-500" />
+                    </a>
+                    <a href="https://www.hackerrank.com/certificates/8014844ae7f6" target="_blank" rel="noopener noreferrer">
+                        <img src="img/certs/6.png" alt="HackerRank CSS" class="h-auto w-[420px] md:w-full mx-auto filter grayscale hover:grayscale-0 transform hover:scale-105 transition duration-500" />
+                    </a>
                 </div>
             </section>
 
@@ -115,9 +144,9 @@
                 <a href="https://github.com/dasShounak/" target="_blank" rel="noopener noreferrer" class="hover-underline">GitHub</a>
                 <a href="https://www.linkedin.com/in/dasshounak/" target="_blank" rel="noopener noreferrer" class="hover-underline">Linkedin</a>
                 <a href="https://shounak.hashnode.dev/" target="_blank" rel="noopener noreferrer" class="hover-underline">Blog</a>
-                <a href="https://twitter.com/theShounakDas" target="_blank" rel="noopener noreferrer" class="hover-underline">Twitter</a>
+                <a href="https://twitter.com/potatoPayload" target="_blank" rel="noopener noreferrer" class="hover-underline">Twitter</a>
             </div>
-            <p class="text-center mt-16 text-black text-xs">&copy;2021 Shounak Das</p>
+            <p class="text-center mt-16 text-black text-xs">&copy;2022 Shounak Das</p>
         </footer>
         <script src="script.js"></script>
     </body>
